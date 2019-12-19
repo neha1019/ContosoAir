@@ -1,5 +1,5 @@
 
-[![Build Status](https://dev.azure.com/nehavisualpath/Amigo/_apis/build/status/neha1019.ContosoAir?branchName=master)](https://dev.azure.com/nehavisualpath/Amigo/_build/latest?definitionId=1&branchName=master)
+
 
 # Microsoft.Github CI Demo
 
