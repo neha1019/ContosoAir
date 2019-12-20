@@ -1,4 +1,10 @@
 pool:
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'C:\Users\office\git using pipeline\ContosoAir\azure-pipelines.yml'
+    customRegistry: 'useFeed'
+    customFeed: '28846cea-456e-4ef3-88fb-f73ba7e9232e'
   vmImage: ubuntu-16.04
 trigger:
   - master
