@@ -1,4 +1,4 @@
-# Build a service with Dockerfile
+# Push image to aws
 version: '1.0'
 
 steps:
@@ -8,3 +8,12 @@ steps:
     image-name: codefresh-io/image
     dockerfile: Dockerfile
     tag: latest
+
+  push-image:
+    type: push
+    candidate: ${{build-example}}
+    tag: ${{CF_BRANCH}}
+    registry: #registry of amazonaws.com
+    credentials:
+      username: ${{aws-access-key-id}}
+      password: ${{aws-secret-access-key}}
