@@ -4,6 +4,7 @@ trigger:
   - master
 steps:
   - task: Npm@1
+ input: [command]/usr/local/bin/npm install
     inputs:
       command: install
   - script: 'npm test'
