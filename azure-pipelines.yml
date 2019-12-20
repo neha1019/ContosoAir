@@ -4,6 +4,7 @@ pool:
 trigger:
   - master
 steps:
+ // updating the build pipeline
   - task: Npm@1
     inputs:
       command: install
